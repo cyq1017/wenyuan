@@ -108,12 +108,30 @@ status: active
 | 插件 | 用途 | 优先级 |
 |------|------|--------|
 | **Terminal** | 在 Obsidian 内运行 Claude Code | 必装 |
+| **Web Clipper** | 一键剪藏网页内容到 vault（论文、文章、资料） | 建议 |
 | **Calendar** | 日历视图查看日记 | 建议 |
 | **Obsidian Git** | 自动备份笔记到 GitHub | 建议 |
 | **Dataview** | 把笔记变成可查询的数据库 | 进阶 |
 | **Templater** | 更灵活的模板系统 | 进阶 |
 | **ZotLit** | Zotero 文献管理集成 | 用 Zotero 的人 |
 | **PDF++** | 在 Obsidian 内阅读 PDF | 常读 PDF 的人 |
+
+### Web Clipper 使用说明
+
+[Obsidian Web Clipper](https://obsidian.md/clipper) 是 Obsidian 官方出品的浏览器扩展，可以将网页内容一键保存为 Markdown 笔记到你的 vault。
+
+**安装：**
+1. 在 Chrome/Edge/Safari/Firefox 的扩展商店搜索 `Obsidian Web Clipper`
+2. 安装后点击扩展图标，设置保存目标为你的文渊 vault
+
+**学术使用场景：**
+- 看到一篇有价值的在线论文/文章 → 一键剪藏到 `00_收件箱/`
+- 浏览学术会议网站 → 剪藏 CFP 到 `50_资源/期刊动态/`
+- 在知网/Google Scholar 找到文献 → 剪藏摘要信息到 `30_文献/`
+
+**建议配置：**
+- 默认保存路径设为 `00_收件箱/`（剪藏后再用 `/organize` 归类）
+- 模板中加入 frontmatter：`type: inbox` + `status: unprocessed`
 
 ---
 
