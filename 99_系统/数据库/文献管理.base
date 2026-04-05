@@ -1,0 +1,11 @@
+{
+  "folder": "30_文献",
+  "filter": {},
+  "order": [
+    {
+      "field": "year",
+      "direction": "desc"
+    }
+  ],
+  "columns": ["title", "author", "year", "status", "area", "tags"]
+}

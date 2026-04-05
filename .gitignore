@@ -1,0 +1,13 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/app.json
+.trash/
+.DS_Store
+
+# System files
+*.DS_Store
+Thumbs.db
+
+# Keep empty directories
+!.gitkeep

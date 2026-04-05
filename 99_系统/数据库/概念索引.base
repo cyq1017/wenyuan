@@ -1,0 +1,11 @@
+{
+  "folder": "40_概念",
+  "filter": {},
+  "order": [
+    {
+      "field": "file.name",
+      "direction": "asc"
+    }
+  ],
+  "columns": ["file.name", "aliases", "area", "related"]
+}
