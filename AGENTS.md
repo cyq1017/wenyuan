@@ -23,6 +23,7 @@
 
 可用的工作流：
 - 晨间规划 → `.agents/skills/start-my-day/SKILL.md`
+- 每日复盘 → `.agents/skills/end-my-day/SKILL.md`
 - 文献精读 → `.agents/skills/literature-review/SKILL.md`
 - 概念梳理 → `.agents/skills/explore-concept/SKILL.md`
 - 推进项目 → `.agents/skills/advance-paper/SKILL.md`
