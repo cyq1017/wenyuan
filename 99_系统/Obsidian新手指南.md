@@ -28,11 +28,12 @@ Obsidian 是一款**免费的本地笔记软件**，数据以纯 Markdown 文件
 输入 `[[` 弹出笔记列表，选择即可创建链接。两边都能看到关联。
 
 ### 前置属性（Frontmatter）
-文渊的笔记顶部有属性区域，帮助 AI 管理笔记：
+文渊的笔记顶部有一块 `---` 包裹的属性区域，用来告诉 AI 这篇笔记是什么、属于哪个项目、当前状态等。你不需要每次手动写，AI 会自动添加。
 ```yaml
 ---
-type: project
-status: active
+type: project          # 笔记类型（project/literature/concept等）
+status: active         # 状态（active/completed/on-hold）
+related: [[XX项目]]   # 关联到其他笔记
 ---
 ```
 
@@ -92,15 +93,31 @@ status: active
 
 ---
 
-## AI 技术参考（Skills）
+## AI Skills（给 AI 看的参考文档）
 
 文渊内置了一些 Obsidian 技术相关的 AI 参考文档，帮助 AI 更好地使用 Obsidian 功能。这些文件位于 `.claude/skills/` 和 `.agents/skills/` 目录下：
+
+**文渊内置：**
 
 | Skill | 内容 |
 |-------|------|
 | `obsidian-markdown` | Obsidian 的 Markdown 语法指南 |
 | `obsidian-bases` | Obsidian Bases（数据库视图）使用方法 |
 | `json-canvas` | Obsidian Canvas（画布笔记）格式说明 |
+
+**社区可选 Skills（与文渊工作流无关，按需安装）：**
+
+这些是社区开发的 Obsidian 相关 AI 技能，可以增强 AI 在特定场景下的表现。它们不是 Obsidian 插件，而是给 AI 看的参考文档。
+
+| Skill | 用途 | 安装命令 |
+|-------|------|----------|
+| obsidian-cli | 让 AI 用命令行管理 vault | `npx skills add kepano/obsidian-skills@obsidian-cli` |
+| defuddle | 网页转干净 Markdown | `npx skills add kepano/obsidian-skills@defuddle` |
+| excalidraw-diagram | AI 生成手绘图 | `npx skills add axtonliu/axton-obsidian-visual-skills@excalidraw-diagram` |
+| canvas-creator | AI 创建 Canvas 画布 | `npx skills add axtonliu/axton-obsidian-visual-skills@obsidian-canvas-creator` |
+| mermaid-visualizer | AI 生成流程图 | `npx skills add axtonliu/axton-obsidian-visual-skills@mermaid-visualizer` |
+
+浏览更多：[skills.sh](https://skills.sh/) 搜索 `obsidian`
 
 这些不是用户手动调用的命令，而是 AI 在需要时自动参考的文档。
 
@@ -113,6 +130,12 @@ status: active
 | iCloud | Mac + iPhone 用户 | 免费 |
 | Obsidian Sync | 跨平台、最省心 | $4/月 |
 | Remotely Save + 坚果云 | 国内用户 | 免费 |
+
+**iCloud 同步设置：** 将文渊 vault 放到 iCloud 对应目录下：
+```
+Mac: ~/Library/Mobile Documents/iCloud~md~obsidian/Documents/文渊/
+iPhone: 打开 Obsidian App → 就能看到 iCloud 中的文渊 vault
+```
 
 新手建议先在电脑上用起来，熟悉后再配置同步。
 
@@ -133,7 +156,7 @@ status: active
 A: 个人使用完全免费。Obsidian Sync 和 Publish 是可选的付费服务。
 
 **Q: 以前的笔记能迁移过来吗？**
-A: Markdown 格式直接复制进来。Word 可以先转 Markdown（搜索 `Word 转 Markdown` 有在线工具）。
+A: Markdown 格式直接复制进来。Word 可以先转 Markdown（搜索 `Word 转 Markdown` 有在线工具）。复制进来后用 `/organize` 让 AI 帮你归类整理。
 
 **Q: 文渊的文件结构可以改吗？**
-A: 可以。详见 [[文渊使用指南#个性化定制]]。
+A: 可以。详见 [[文渊使用指南#个性化定制]](文渊使用指南.md)。建议先跟 Claude Code 商量再改，避免打乱现有结构。
