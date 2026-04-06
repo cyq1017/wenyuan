@@ -36,9 +36,7 @@
 - `/ask <问题>` — 快速学术问答
 - `/research <主题>` — 系统性学术调研，生成研究综述
 - `/brainstorm` — 发散式头脑风暴，梳理模糊想法
-
-**信息搜索:**
-- `/academic-feed` — 学术动态推送（教职/论文/CFP/会议）
+- `/academic-feed` — 学术动态推送（已集成到 start-my-day，也可单独调用）
 
 **Obsidian 技术参考:**
 `obsidian-markdown`, `obsidian-bases`, `json-canvas`

@@ -1,12 +1,10 @@
 # 文渊 (WenYuan)
 
-> 专为文科研究者设计的 AI 学术助手——基于 Obsidian + Claude Code
+> 你的 AI 学术助手——基于 Obsidian + Claude Code
 
-**「文渊」** 取自"文以载道，渊博知识"——古代皇家藏书楼「文渊阁」正是知识汇聚之地。我们希望文渊成为你的**个人学术知识库**：把课堂笔记、论文、灵感、文献全部放进来，AI 帮你梳理、连接、积累，越用越有价值。
+**「文渊」** 得名于明代皇家藏书楼「文渊阁」，寓意知识汇聚之所。在 AI 时代，我们重新构想这个概念：让每位研究者都拥有一座属于自己的「文渊阁」——一个由 AI 持续整理、关联、积累的个人学术知识库。
 
-> **愿景：** 受 Andrej Karpathy 的"LLM 个人知识库"理念启发——不把笔记分散在各种 App 里，而是全扔进一个文件夹，让 AI 帮你整理成个人学术维基。文渊就是这个理念的文科学术版本。
-
-文渊是一个开箱即用的 Obsidian 知识库模板，配合 AI 编码助手（Claude Code），为文科博士和研究者提供从灵感捕捉到论文写作的全流程学术生产力系统。
+文渊是一个开箱即用的 Obsidian 知识库模板。配合 AI 助手，它为研究者提供从灵感捕捉到论文产出的全流程学术工作流。虽然主要面向人文社科领域设计，但任何学科的研究者都可以根据自己的需求自由定制。
 
 ---
 
@@ -14,7 +12,7 @@
 
 | 场景 | 命令 | 说明 |
 |------|------|------|
-| 每日规划 | `/start-my-day` | 回顾昨日、规划今日、连接活跃项目 |
+| 每日规划 | `/start-my-day` | 回顾昨日、规划今日、推送学术动态 |
 | 每日复盘 | `/end-my-day` | 总结成果、更新项目、归档对话、规划明日 |
 | 精读文献 | `/read` | 苏格拉底式引导精读，生成结构化笔记 |
 | 概念溯源 | `/explore <概念>` | 深度梳理定义、演变、代表人物 |
@@ -24,65 +22,23 @@
 | 头脑风暴 | `/brainstorm` | 梳理模糊想法，找到研究方向 |
 | 笔记整理 | `/organize` | 把零散笔记归类到正确位置 |
 | 快速问答 | `/ask <问题>` | 学术概念快速解答 |
-| 学术动态 | `/academic-feed` | 推送教职招聘、新论文、会议信息 |
 | 归档 | `/archive` | 清理已完成项目，保持系统整洁 |
 
 ---
 
 ## 开始之前
 
-文渊需要两个前提工具。如果你还不熟悉它们，请先学习：
+文渊 = Obsidian（知识库）+ Claude Code（AI 助手），两者是一个整体。
+
+> 如果你已经熟悉这两个工具，可以跳过这一步直接安装。
 
 ### 1. Obsidian — 你的知识库
-
-Obsidian 是一款免费的本地笔记软件，你的所有学术资料都存在自己电脑上。
-
-**学习资源：**
-- [Obsidian 官方中文帮助](https://help.obsidian.md/zh/)
-- [PKMer 社区](https://pkmer.cn/) — 国内最活跃的 Obsidian 中文社区
-- B站搜索 `Obsidian 保姆级教程` 或 `Obsidian 新手指南`
-
-**你只需要掌握：**
-- 创建和打开一个仓库（vault）
-- 基本的 Markdown 语法（标题、列表、加粗）
-- 双向链接 `[[笔记名]]`
+- 详细教程：安装文渊后查看 → [[99_系统/Obsidian新手指南]]（含 Terminal 插件、Web Clipper 等配置）
+- 或参考：[Obsidian 官方中文帮助](https://help.obsidian.md/zh/) · [PKMer 社区](https://pkmer.cn/) · B站搜索 `Obsidian 保姆级教程`
 
 ### 2. Claude Code — 你的 AI 研究伙伴
-
-Claude Code 是 Anthropic 公司开发的 AI 编码助手，运行在终端中。它可以读写你的文件，是文渊的"大脑"。
-
-**学习资源：**
-- [Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)
-- 安装方法：`npm install -g @anthropic-ai/claude-code`
-
-**费用说明：**
-- Claude Code 需要 Anthropic 订阅，Pro 计划 $20/月起
-- 详情见 [Anthropic 定价页面](https://www.anthropic.com/pricing)
-
-#### 用不了 Anthropic？使用其他模型
-
-如果你无法订阅 Anthropic（没有 Visa 信用卡、费用太高等），可以通过以下方式让 Claude Code 连接到其他 AI 模型：
-
-**方法：通过 OpenRouter 使用国内外模型**
-
-1. 注册 [OpenRouter](https://openrouter.ai/)（支持多种支付方式）
-2. 获取 API Key
-3. 在终端中设置环境变量：
-
-```bash
-# 添加到 ~/.zshrc（Mac）或 ~/.bashrc（Linux）
-export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
-export ANTHROPIC_AUTH_TOKEN="你的OpenRouter API Key"
-export ANTHROPIC_API_KEY=""
-```
-
-4. 重启终端，即可使用
-
-**支持的模型包括：**
-- 国产：Kimi (Moonshot)、MiniMax、DeepSeek、智谱 GLM
-- 国外：Gemini、GPT、Llama
-
-更多配置方法可搜索 `claude-code-router` 或 `cc-switch`。
+- 详细教程：安装文渊后查看 → [[99_系统/Claude Code新手指南]]（含安装、换模型、国内使用方案）
+- 或参考：[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)
 
 ---
 
@@ -100,8 +56,6 @@ claude
 
 > "帮我从 GitHub 下载 cyq1017/wenyuan 这个仓库到我的文档文件夹，然后用 Obsidian 打开它"
 
-Claude 会自动完成下载和配置。
-
 ### 方式二：网页下载（零终端）
 
 1. 打开 [https://github.com/cyq1017/wenyuan](https://github.com/cyq1017/wenyuan)
@@ -112,10 +66,6 @@ Claude 会自动完成下载和配置。
 ### 方式三：命令行
 
 ```bash
-# 使用 npx degit（需要 Node.js）
-npx degit cyq1017/wenyuan 我的文渊
-
-# 或使用 git clone
 git clone https://github.com/cyq1017/wenyuan.git 我的文渊
 ```
 
@@ -129,10 +79,10 @@ git clone https://github.com/cyq1017/wenyuan.git 我的文渊
 4. 输入 `/start-my-day` 开始你的第一天！
 
 **新手必读：**
-- [[99_系统/Obsidian新手指南]] — Obsidian 入门 + Terminal 插件配置
-- [[99_系统/Claude Code新手指南]] — Claude Code 安装 + 换模型 + 国内订阅
-- [[99_系统/快速上手教程]] — 手把手带你跑完一个完整流程（纸质笔记 OCR 归档）
-- [[99_系统/文渊使用指南]] — 全部功能的详细说明 + 个性化定制
+- [[99_系统/Obsidian新手指南]] — Obsidian 入门 + 必装插件
+- [[99_系统/Claude Code新手指南]] — 安装 + 国内使用 + 换模型
+- [[99_系统/快速上手教程]] — 手把手体验完整工作流
+- [[99_系统/文渊使用指南]] — 全部功能 + 个性化定制
 
 ---
 
@@ -166,7 +116,7 @@ git clone https://github.com/cyq1017/wenyuan.git 我的文渊
 ## 命令速查表
 
 ```
-/start-my-day     每日规划
+/start-my-day     每日规划 + 学术动态推送
 /end-my-day       每日复盘
 /read              精读文献
 /explore <概念>    概念溯源
@@ -176,7 +126,6 @@ git clone https://github.com/cyq1017/wenyuan.git 我的文渊
 /brainstorm        头脑风暴
 /organize          笔记整理
 /ask <问题>        快速问答
-/academic-feed     学术动态
 /archive           归档清理
 ```
 
@@ -185,27 +134,30 @@ git clone https://github.com/cyq1017/wenyuan.git 我的文渊
 ## 常见问题
 
 **Q: 需要会编程吗？**
-A: 不需要。你只需要能在终端中输入一行命令启动 Claude Code，之后的交互全部用自然语言。
+A: 不需要。Claude Code 虽然运行在终端里，但交互全部用自然语言。详见 [[99_系统/Claude Code新手指南]]。
 
 **Q: 数据安全吗？**
-A: 你的所有笔记都存在本地电脑上，不会自动上传到任何地方。AI 交互时会将相关内容发送给 AI 服务商处理。
+A: 你的所有笔记都存在本地电脑上。AI 交互时会将相关内容发送给 AI 服务商处理。
 
-**Q: 可以在手机上用吗？**
-A: Obsidian 有移动端 App，可以随时查看和编辑笔记。但 Claude Code 需要电脑端的终端运行。
+**Q: 可以在手机上查看吗？**
+A: Obsidian 有移动端 App，可以随时查看和编辑笔记。同步方案见 [[99_系统/Obsidian新手指南#多端同步]]。
 
-**Q: 和 Notion / 语雀有什么区别？**
-A: 文渊基于 Obsidian，数据全部本地化、纯 Markdown 格式，不依赖任何云服务。你的学术资料完全掌握在自己手中。
+**Q: 只适合文科生吗？**
+A: 文渊主要面向人文社科设计，但所有工作流和模板都可以自由调整。理工科研究者同样可以用它来管理文献、概念和项目。详见 [[99_系统/文渊使用指南#个性化定制]]。
+
+**Q: 遇到问题怎么办？**
+A: 直接在 Claude Code 中描述你的问题，AI 会帮你解决。
 
 ---
 
 ## 设计理念
 
-文渊的设计参考了 [OrbitOS](https://github.com/MarsWang42/OrbitOS) 框架，并为人文学科学术场景重新设计：
+文渊的设计参考了 [OrbitOS](https://github.com/MarsWang42/OrbitOS) 框架，并为学术研究场景重新设计：
 
-- **AI 即助手**：AI 不替代你的思考，而是引导和辅助。文献精读用苏格拉底式提问，头脑风暴用发散性对话。
-- **知识即网络**：通过双向链接将概念、文献、项目连成知识网络，越用越有价值。
-- **简单即力量**：纯 Markdown 文件，不依赖复杂插件，不锁定任何平台。
-- **以用户为中心**：所有工作流围绕文科研究者的真实场景设计——选题、文献、写作、答辩。
+- **AI 即助手**：AI 不替代你的思考，而是引导和辅助
+- **知识即网络**：通过双向链接将概念、文献、项目连成知识网络
+- **简单即力量**：纯 Markdown 文件，不依赖复杂插件，不锁定平台
+- **以人为本**：所有工作流围绕研究者的真实场景设计
 
 ---
 
