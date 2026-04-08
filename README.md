@@ -1,10 +1,10 @@
 # 文渊 (WenYuan)
 
-> 你的 AI 学术助手——基于 Obsidian + Claude Code
+> 用 AI 构建你的学术知识库 · 基于 Obsidian + Claude Code
 
-**「文渊」** 取自“文以载道，渊博知识”——明代皇家藏书楼「文渊阁」正是知识汇聚之地。在 AI 时代，我们重新构想这个概念：让每位研究者都拥有一座属于自己的「文渊阁」——一个由 AI 持续整理、关联、积累的个人学术知识库。知识网络通过双向链接不断生长，AI 基于你的积累给出越来越精准的建议——越用越有价值。
+**「文渊」** 取自“文以载道，渊博知识”——古代皇家藏书楼「文渊阁」寓意知识汇聚之所。在 AI 时代，我们重新构想这个概念：让每位研究者都拥有一座属于自己的「文渊阁」——一个由你和 AI 共同整理、关联、积累的个人学术知识库。知识网络通过双向链接不断生长，AI 基于你的积累给出越来越精准的建议——越用越有价值。
 
-文渊是一个开箱即用的 Obsidian 知识库模板。配合 AI 助手，它为研究者提供从灵感捕捉到论文产出的全流程学术工作流。文渊为学术研究设计，开箱即用。你可以根据自己的学科和习惯自由调整。
+文渊是一个 Obsidian 知识库模板，结合 AI 助手，为研究者提供从灵感捕捉到论文产出的全流程学术工作流。文渊为人文社科学术研究设计，开箱即用。你也可以根据自己的学科和习惯自由调整。
 
 ---
 
@@ -33,11 +33,11 @@
 > 如果你已经熟悉这两个工具，可以跳过这一步直接安装。
 
 ### 1. Obsidian — 你的知识库
-- 详细教程：安装文渊后查看 → [[99_系统/Obsidian新手指南]]([99_系统/Obsidian新手指南.md])（含 Terminal 插件、Web Clipper 等配置）
+- 详细教程：安装文渊后查看 → [Obsidian新手指南](99_系统/Obsidian新手指南.md)（含 Terminal 插件、Web Clipper 等配置）
 - 或参考：[Obsidian 官方中文帮助](https://help.obsidian.md/zh/) · [PKMer 社区](https://pkmer.cn/) · B站搜索 `Obsidian 保姆级教程`
 
 ### 2. Claude Code — 你的 AI 研究伙伴
-- 详细教程：安装文渊后查看 → [[99_系统/Claude Code新手指南]]([99_系统/Claude%20Code新手指南.md])（含安装、换模型、国内使用方案）
+- 详细教程：安装文渊后查看 → [Claude Code新手指南](99_系统/Claude%20Code新手指南.md)（含安装、换模型、国内使用方案）
 - 或参考：[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)
 
 ---
@@ -76,26 +76,26 @@ git clone https://github.com/cyq1017/wenyuan.git 我的文渊
 ## 安装完成后
 
 1. 在 Obsidian 中打开文渊文件夹
-2. 安装 Terminal 插件（在 Obsidian 内打开终端）→ 详见 [[99_系统/Obsidian新手指南]]([99_系统/Obsidian新手指南.md])
+2. 安装 Terminal 插件（在 Obsidian 内打开终端）→ 详见 [Obsidian新手指南](99_系统/Obsidian新手指南.md)
 3. 在终端中 `cd` 到文渊文件夹，运行 `claude`
 4. 输入 `/start-my-day` 开始你的第一天！
 
 **新手必读：**
-- [[99_系统/Obsidian新手指南]]([99_系统/Obsidian新手指南.md]) — Obsidian 入门 + 必装插件
-- [[99_系统/Claude Code新手指南]]([99_系统/Claude%20Code新手指南.md]) — 安装 + 国内使用 + 换模型
-- [[99_系统/快速上手教程]]([99_系统/快速上手教程.md]) — 手把手体验完整工作流
-- [[99_系统/文渊使用指南]]([99_系统/文渊使用指南.md]) — 全部功能 + 个性化定制
+- [Obsidian新手指南](99_系统/Obsidian新手指南.md) — Obsidian 入门 + 必装插件
+- [Claude Code新手指南](99_系统/Claude%20Code新手指南.md) — 安装 + 国内使用 + 换模型
+- [快速上手教程](99_系统/快速上手教程.md) — 手把手体验完整工作流
+- [文渊使用指南](99_系统/文渊使用指南.md) — 全部功能 + 个性化定制
 
 ---
 
 ## 其他 AI 工具（实验性）
 
-文渊的核心工作流为 Claude Code 设计，但也兼容其他 AI 编码助手。用自然语言描述你的需求即可：
+文渊的核心工作流围绕 Claude Code 设计，但所有的 AI 提示词和工作流指令都以纯文本（Markdown）存储，因此也兼容其他 AI 编码助手。你只需要在对应工具的终端里打开文渊文件夹，用自然语言描述需求即可。不同工具会读取各自的配置文件：
 
 | 工具 | 配置文件 | 链接 | 说明 |
 |------|----------|------|------|
 | Codex CLI | `AGENTS.md` | [github.com/openai/codex](https://github.com/openai/codex) | OpenAI 官方，每月有免费额度 |
-| Kimi Code | `AGENTS.md` | [kimi.moonshot.cn](https://kimi.moonshot.cn/) | 国内可用，无需翻墙 |
+| Kimi Code | `AGENTS.md` | [github.com/nicepkg/kimi-code](https://github.com/nicepkg/kimi-code) | 国内直接用，中文表现好 |
 | Gemini CLI | `GEMINI.md` | [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Google 官方 |
 
 ---
@@ -137,25 +137,25 @@ git clone https://github.com/cyq1017/wenyuan.git 我的文渊
 ## 常见问题
 
 **Q: 需要会编程吗？**
-A: 不需要。Claude Code 虽然运行在终端里，但交互全部用自然语言。详见 [[99_系统/Claude Code新手指南]]。
+A: 不需要。Claude Code 虽然运行在终端里，但交互全部用自然语言。详见 [Claude Code新手指南](99_系统/Claude%20Code新手指南.md)。
 
 **Q: 数据安全吗？**
 A: 你的所有笔记都存在本地电脑上。AI 交互时会将相关内容发送给 AI 服务商处理。
 
 **Q: 可以在手机上查看吗？**
-A: Obsidian 有移动端 App，可以随时查看和编辑笔记。同步方案见 [[99_系统/Obsidian新手指南#多端同步]]。
+A: Obsidian 有移动端 App，可以随时查看和编辑笔记。同步方案见 [Obsidian新手指南](99_系统/Obsidian新手指南.md)。
 
 **Q: 只适合文科生吗？**
-A: 文渊为学术研究设计，所有工作流和模板都可以根据你的学科自由调整。详见 [[99_系统/文渊使用指南#个性化定制]]([99_系统/文渊使用指南.md])。
+A: 文渊为人文社科学术研究设计，所有工作流和模板都可以根据你的学科自由调整。详见 [文渊使用指南](99_系统/文渊使用指南.md)。
 
 **Q: 遇到问题怎么办？**
-A: 直接在 Claude Code 中描述你的问题，AI 会帮你解决。
+A: 安装前可以在 ChatGPT 等 AI 对话工具中提问；安装好文渊后，直接在 Claude Code 中描述你的问题即可。
 
 ---
 
 ## 设计理念
 
-文渊的设计参考了 [OrbitOS](https://github.com/MarsWang42/OrbitOS) 框架，并为学术研究场景重新设计：
+文渊的设计灵感来源于 [OrbitOS](https://github.com/MarsWang42/OrbitOS) 框架与个人知识库构建实践，并为学术研究场景重新设计：
 
 - **AI 即助手**：AI 不替代你的思考，而是引导和辅助
 - **知识即网络**：通过双向链接将概念、文献、项目连成知识网络

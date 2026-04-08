@@ -3,15 +3,15 @@
   "filter": {},
   "order": [
     {
-      "field": "deadline",
+      "field": "status",
       "direction": "asc"
     }
   ],
   "columns": [
     "file.name",
     "status",
+    "type",
     "area",
-    "deadline",
-    "target_journal"
+    "priority"
   ]
 }

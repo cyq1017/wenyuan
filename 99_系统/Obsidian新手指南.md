@@ -55,6 +55,7 @@ related: [[XX项目]]   # 关联到其他笔记
 | 插件 | 用途 | 安装方法 |
 |------|------|----------|
 | **Terminal** (by polyipseity) | 在 Obsidian 内运行 Claude Code | 设置 → 第三方插件 → 浏览 → 搜 `Terminal` |
+| **Calendar** | 日历视图快速查看/新建日记 | 搜 `Calendar` |
 
 ### Terminal 插件使用
 
@@ -72,7 +73,6 @@ related: [[XX项目]]   # 关联到其他笔记
 | 插件 | 用途 | 推荐度 |
 |------|------|--------|
 | **Web Clipper** | 一键剪藏网页到 vault | 建议 |
-| **Calendar** | 日历视图查看日记 | 建议 |
 | **Obsidian Git** | 自动备份到 GitHub | 建议 |
 | **Editing Toolbar** | 类 Word 编辑栏，降低 Markdown 门槛 | 新手友好 |
 | **Dataview** | 把笔记变成可查询的数据库 | 进阶 |
@@ -119,7 +119,7 @@ related: [[XX项目]]   # 关联到其他笔记
 
 浏览更多：[skills.sh](https://skills.sh/) 搜索 `obsidian`
 
-这些不是用户手动调用的命令，而是 AI 在需要时自动参考的文档。
+这些不是用户手动调用的命令，而是 AI 在需要时自动参考的文档。感兴趣的话可以去 [skills.sh](https://skills.sh/) 浏览，看看各个 skill 能做什么。想装哪个，直接告诉 Claude Code，它会帮你完成安装。
 
 ---
 
