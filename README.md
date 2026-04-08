@@ -22,6 +22,7 @@
 | 头脑风暴 | `/brainstorm` | 梳理模糊想法，找到研究方向 |
 | 笔记整理 | `/organize` | 把零散笔记归类到正确位置 |
 | 快速问答 | `/ask <问题>` | 学术概念快速解答 |
+| 知识解析 | `/parse` | 课堂笔记、读书摘录等非结构化文本 → 结构化笔记 + 概念卡片 |
 | 归档 | `/archive` | 清理已完成项目，保持系统整洁 |
 
 ---
@@ -129,6 +130,7 @@ git clone https://github.com/cyq1017/wenyuan.git 我的文渊
 /brainstorm        头脑风暴
 /organize          笔记整理
 /ask <问题>        快速问答
+/parse             知识解析（非结构化文本→笔记+卡片）
 /archive           归档清理
 ```
 
