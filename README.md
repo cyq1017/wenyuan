@@ -64,12 +64,16 @@ claude
 3. 解压到你想要的位置（如「文档」文件夹）
 4. 打开 Obsidian → 点击「打开文件夹作为仓库」→ 选择解压后的文件夹
 
-### 方式三：命令行
+### 方式三：命令行（熟手推荐）
 
 > 什么是命令行/终端？Mac 按 `Cmd + 空格` 搜索「终端」打开，Windows 按 `Win + R` 输入 `cmd` 打开。终端就是一个可以输入文字命令的窗口。
 
 ```bash
+# Git
 git clone https://github.com/cyq1017/wenyuan.git 我的文渊
+
+# 或者不装 Git，用 npx（需要 Node.js）
+npx -y degit cyq1017/wenyuan 我的文渊
 ```
 
 ---
