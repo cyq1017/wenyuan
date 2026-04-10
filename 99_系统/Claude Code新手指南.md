@@ -128,13 +128,15 @@ source ~/.zshrc
 
 **零基础推荐教程：**
 
-> 如果你完全没用过终端，建议先看一篇入门教程建立基本概念，再来安装文渊。推荐搜索以下内容：
+> 如果你完全没用过终端，建议先看一篇入门教程建立基本概念，再来安装文渊。
 
-| 关键词 | 平台 |
+**推荐阅读：**
+
+| 教程 | 说明 |
 |------|------|
-| `Claude Code 零基础 保姆级教程` | B站 |
-| `Claude Code 非程序员 入门` | 知乎 / 少数派 |
-| `终端入门 Mac/Windows 5分钟` | B站 / 知乎 |
+| [Claude Code 非工程师完整入门指南](https://raymondhouch.com/ai/claude/claude-code/) | 侯智薰（雷蒙）撰写，非工程师视角，从"什么是终端"讲起。他本人也用 Obsidian + Claude Code 的工作方式，和文渊的理念一致 |
+| [Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code) | 最权威的安装和使用指南 |
+| [code.claude.com](https://code.claude.com) | Anthropic 官方入门引导页 |
 
 > 核心要点只有三步：**打开终端 → 粘贴安装命令 → 输入 `claude` 开始对话**。不需要学编程。
 
@@ -142,11 +144,11 @@ source ~/.zshrc
 
 | 平台 | 搜索词 |
 |------|--------|
-| B站 | `Claude Code 教程`、`Claude Code 零基础` |
-| 知乎 | `Claude Code 入门`、`AI 编程助手` |
-| 小红书 | `Claude Code 实战`、`AI 编程小白` |
-| 微信公众号 | `Claude Code`、`AI 编码助手` |
-| CSDN / 掘金 / 少数派 | `Claude Code 教程` |
+| B站 | `Claude Code 零基础 非程序员`、`Claude Code 保姆级教程` |
+| 知乎 / 少数派 | `Claude Code 非程序员 入门`、`Claude Code 文科生` |
+| 小红书 | `Claude Code 小白`、`vibe coding 入门` |
+| YouTube | `Claude Code tutorial beginner`、`侯智薰 Claude Code` |
+| 掘金 / CSDN | `Claude Code 入门教程` |
 
 ---
 
