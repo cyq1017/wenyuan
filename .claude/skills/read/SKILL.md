@@ -1,5 +1,5 @@
 ---
-name: literature-review
+name: read
 description: 精读文献 — 引导式文献精读与笔记生成，帮助深入理解学术论文
 ---
 

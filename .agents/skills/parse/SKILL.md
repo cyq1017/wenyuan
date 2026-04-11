@@ -1,5 +1,5 @@
 ---
-name: parse-knowledge
+name: parse
 description: 知识解析 — 将非结构化文本（课堂笔记、读书摘录、会议记录等）拆解为结构化笔记和概念卡片
 ---
 

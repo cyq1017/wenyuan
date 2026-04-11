@@ -1,5 +1,5 @@
 ---
-name: writing-assist
+name: write
 description: 写作辅助 — 学术写作润色、论证逻辑检查、学术用语建议
 ---
 

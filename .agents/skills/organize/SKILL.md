@@ -1,5 +1,5 @@
 ---
-name: organize-notes
+name: organize
 description: 整理笔记 — 将非结构化的阅读笔记、课堂笔记等整理进入 vault
 ---
 
