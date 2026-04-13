@@ -64,10 +64,14 @@ Use the AskUserQuestion tool to gather:
 - Options based on active projects (multiSelect: true) + "其他"
 - Let user select multiple projects they plan to work on today
 
-**Question 2:** "有什么新想法或待记录的事吗？"
+**Question 2:** "最近在读什么？有什么新的思考或困惑？"
+- Free text input
+- 引发学术思考，可以是论文、书、文章，也可以是非学术内容
+
+**Question 3:** "有什么新想法或待记录的事吗？"
 - Free text input for capturing to inbox
 
-**Question 3:** "有什么困难或需要帮助的地方吗？"
+**Question 4:** "有什么困难或需要帮助的地方吗？"
 - Free text input
 
 ## Step 3: 学术动态搜索
